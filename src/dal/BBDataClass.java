@@ -1,4 +1,8 @@
+package dal;
 import java.util.*;
+
+import model.Observer;
+import model.Subject;
 
 public class BBDataClass implements Subject {
 	//different scores benchmarks used in basketball used as main data
