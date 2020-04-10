@@ -2,7 +2,9 @@ package model;
 
 public class AverageScore implements Observer {
 
-	public void update(int twoPointer, int threePointer, int freeThrows, int attempts) {
+	@Override
+	public void update(int twoPointersMade, int threePointersMade, int freeThrowsMade, int twoPointersAttempted,
+			int threePointersAttempted, int freeThrowsAttempted) {
 		// TODO Auto-generated method stub
 		
 	}
