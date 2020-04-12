@@ -65,7 +65,7 @@ public class BBDataClass implements Subject {
 		twoPointersMade = getLatestTwoPointersMade();
 		twoPointersAttempted = getLatestTwoPointersAttempted();
 		threePointersMade = getLatestThreePointersMade();
-		twoPointersAttempted = getLatestThreePointersAttempted();
+		threePointersAttempted = getLatestThreePointersAttempted();
 		freeThrowsMade = getLatestFreeThrowsMade();
 		freeThrowsAttempted = getLatestFreeThrowsAttempted();
 		notifyObservers();

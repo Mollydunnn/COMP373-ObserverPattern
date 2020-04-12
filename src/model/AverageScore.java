@@ -10,9 +10,9 @@ public class AverageScore implements Observer {
 	public void update(int twoPointersMade, int threePointersMade, int freeThrowsMade, int twoPointersAttempted,
 			int threePointersAttempted, int freeThrowsAttempted) {
 		// TODO Auto-generated method stub
-		this.twoPointerRate = ((twoPointersMade/twoPointersAttempted)*100);
-		this.threePointerRate = ((threePointersMade/threePointersAttempted)*100);
-		this.freeThrowRate = ((freeThrowsMade/freeThrowsAttempted)*100);
+		this.twoPointerRate = (((float)twoPointersMade/(float)twoPointersAttempted)*100);
+		this.threePointerRate = (((float)threePointersMade/(float)threePointersAttempted)*100);
+		this.freeThrowRate = (((float)freeThrowsMade/(float)freeThrowsAttempted)*100);
 		display();
 	}
 	
