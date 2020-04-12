@@ -1,5 +1,4 @@
 package model;
-import java.util.*;
 
 
 public class CurrentScore implements Observer {
@@ -29,10 +28,10 @@ public class CurrentScore implements Observer {
 		//prints how many two pointers, three pointers, and free throws were attempted and them how many were made (successful) during the game
 		System.out.println("Points Made and Attempted:");
 		System.out.println("Two Pointers Attempted: " + twoPointersAttempted); //prints the number of times a two pointer was attempted
-		System.out.println("Two Pointers Made: " + twoPointersAttempted); //prints the number of times a two pointer was successful
+		System.out.println("Two Pointers Made: " + twoPointersMade); //prints the number of times a two pointer was successful
 		System.out.println("Three Pointers Attempted: " + threePointersAttempted); //prints the number of three pointers attempted
 		System.out.println("Three Pointers Made: " + threePointersMade); //prints the number of times a three pointer was successful
-		System.out.println("Free Attempted: " + freeThrowsAttempted); //prints the number of times a free throw was attempted
+		System.out.println("Free Throws Attempted: " + freeThrowsAttempted); //prints the number of times a free throw was attempted
 		System.out.println("Free Throws: " + freeThrowsMade); //prints the number of times a free throw was successful
 		
 		//here each type of score bench mark is multiplied by the right number to give a total score

@@ -12,7 +12,7 @@ public class AverageScore implements Observer {
 		// TODO Auto-generated method stub
 		this.twoPointerRate = ((twoPointersMade/twoPointersAttempted)*100);
 		this.threePointerRate = ((threePointersMade/threePointersAttempted)*100);
-		this.twoPointerRate = ((freeThrowsMade/freeThrowsAttempted)*100);
+		this.freeThrowRate = ((freeThrowsMade/freeThrowsAttempted)*100);
 		display();
 	}
 	

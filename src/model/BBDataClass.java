@@ -1,8 +1,5 @@
-package dal;
+package model;
 import java.util.*;
-
-import model.Observer;
-import model.Subject;
 
 public class BBDataClass implements Subject {
 	//different scores benchmarks used in basketball used as main data
@@ -40,6 +37,39 @@ public class BBDataClass implements Subject {
 		}
 	}
 	
+	private int getLatestTwoPointersMade() {
+		return 7;
+	}
+	
+	private int getLatestThreePointersMade() {
+		return 10;
+	}
+	
+	private int getLatestFreeThrowsMade() {
+		return 5;
+	}
+	
+	private int getLatestTwoPointersAttempted() {
+		return 9;
+	}
+	
+	private int getLatestThreePointersAttempted() {
+		return 13;
+	}
+	
+	private int getLatestFreeThrowsAttempted() {
+		return 18;
+	}
+	
+	public void dataChanged() {
+		twoPointersMade = getLatestTwoPointersMade();
+		twoPointersAttempted = getLatestTwoPointersAttempted();
+		threePointersMade = getLatestThreePointersMade();
+		twoPointersAttempted = getLatestThreePointersAttempted();
+		freeThrowsMade = getLatestFreeThrowsMade();
+		freeThrowsAttempted = getLatestFreeThrowsAttempted();
+		notifyObservers();
+	}
 
 
 }
