@@ -20,7 +20,7 @@ public class CurrentScore implements Observer {
 		this.freeThrowsMade = freeThrowsMade;
 		this.twoPointersAttempted = twoPointersAttempted;
 		this.threePointersAttempted = threePointersAttempted;
-		this.freeThrowsMade = freeThrowsAttempted;		
+		this.freeThrowsAttempted = freeThrowsAttempted;		
 		display();
 	}
 	
@@ -32,7 +32,7 @@ public class CurrentScore implements Observer {
 		System.out.println("Three Pointers Attempted: " + threePointersAttempted); //prints the number of three pointers attempted
 		System.out.println("Three Pointers Made: " + threePointersMade); //prints the number of times a three pointer was successful
 		System.out.println("Free Throws Attempted: " + freeThrowsAttempted); //prints the number of times a free throw was attempted
-		System.out.println("Free Throws: " + freeThrowsMade); //prints the number of times a free throw was successful
+		System.out.println("Free Throws Made: " + freeThrowsMade); //prints the number of times a free throw was successful
 		
 		//here each type of score bench mark is multiplied by the right number to give a total score
 		//EX: if a player made 3 two pointers then it would be multiplied by 2 to give the score of 6 which is then added to the total score
